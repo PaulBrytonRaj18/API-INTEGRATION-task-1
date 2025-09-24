@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration - Task 1</title>
+    <link rel="icon" href="api_icon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>API Integration</h1>
+        <p>Search current weather by city. Data from Open-Meteo and Geo API. News from GNews API.</p>
+    </header>
+
+    <main class="container">
+        <form id="search-form" autocomplete="off">
+            <input id="city-input" type="text" placeholder="Enter city (e.g., London)" aria-label="City" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <section id="status" role="status" aria-live="polite"></section>
+
+        <section id="results" class="grid"></section>
+
+        <hr class="divider">
+
+        <section>
+            <h2>News Search</h2>
+            <form id="news-form" autocomplete="off">
+                <input id="news-input" type="text" placeholder="Search news (e.g., technology)" aria-label="News Topic" required>
+                <button type="submit">Search</button>
+            </form>
+            <section id="news-status" role="status" aria-live="polite"></section>
+            <section id="news-results" class="grid"></section>
+        </section>
+    </main>
+
+    <footer class="container muted">
+        <small>
+            Built for Task‑1. Sources: <a href="https://geocoding-api.open-meteo.com" target="_blank" rel="noopener">Open‑Meteo Geocoding</a> & <a href="https://open-meteo.com" target="_blank" rel="noopener">Open‑Meteo</a>. News: <a href="https://gnews.io/" target="_blank" rel="noopener">GNews API</a>.
+        </small>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
