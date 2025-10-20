@@ -1,5 +1,24 @@
 # API Integration - Task 1
 
+*Company*: CODTECH IT SOLUTIONS
+
+*Name*: Paul Bryton Raj
+
+*INTERN ID*: CY06DY2622
+
+*DOMAIN*: Full Stack Developement
+
+*DURATION*: 6 weeks
+
+*MENTOR*: **NEELA SANTHOSH**
+
+**Output**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8962a152-5d4b-446c-b250-aedcf40a79de" />
+
+<img width="1897" height="1079" alt="image" src="https://github.com/user-attachments/assets/855ff29a-3336-4772-996d-ee0ade5e06aa" />
+
+
+
 ## Overview
 This web application allows users to search for current weather information by city and to search for news articles by topic. The weather data is sourced from the Open-Meteo and Geo API, while the news data is fetched using the GNews API.
 
