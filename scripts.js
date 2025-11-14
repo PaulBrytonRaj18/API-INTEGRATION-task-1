@@ -145,3 +145,39 @@ window.addEventListener('DOMContentLoaded', () => {
 		newsForm?.dispatchEvent(new Event('submit'));
 	}
 });
+
+// Dark mode toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+darkModeToggle?.addEventListener('click', () => {
+	document.body.classList.toggle('dark-mode');
+});
+
+// Utility functions
+function setStatus(message, type = 'info') {
+	statusElement.textContent = message;
+	statusElement.className = type;
+}
+
+function setNewsStatus(message, type = 'info') {
+	newsStatus.textContent = message;
+	newsStatus.className = type;
+}
+
+function renderWeatherCard(label, hourly) {
+	const card = document.createElement('article');
+	card.className = 'card';
+	card.innerHTML = `
+		<h3>${label}</h3>
+		<dl>
+			<div>
+				<dt>Temperature</dt>
+				<dd>${hourly.temperature_2m[0]} °C</dd>
+			</div>
+			<div>
+				<dt>Wind</dt>
+				<dd>${hourly.windspeed_10m[0]} m/s</dd>
+			</div>
+		</dl>
+	`;
+	resultsElement.appendChild(card);
+}
