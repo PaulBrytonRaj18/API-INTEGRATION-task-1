@@ -116,3 +116,32 @@ button:active{transform:translateY(0);box-shadow:0 3px 8px var(--shadow-2), 0 1p
 	.card:hover{transform:none}
 	button:hover,button:active{transform:none}
 }
+
+
+::-webkit-scrollbar{
+	width:12px;
+	background:rgba(15,23,42,.65)
+}
+
+::-webkit-scrollbar-thumb{
+	background:rgba(56,189,248,.25);
+	border-radius:6px;
+	border:3px solid rgba(15,23,42,.65)
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background:rgba(56,189,248,.4)
+}
+
+/* Dark mode for embedded content */
+iframe{
+	filter:invert(1) hue-rotate(180deg);
+}
+
+iframe *{
+	filter:invert(1) hue-rotate(180deg);
+}
+
+iframe img{
+	filter:invert(1) hue-rotate(180deg);
+}
